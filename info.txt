@@ -1,0 +1,16 @@
+https://github.com/jorgeduje/programacion-imperativa
+
+Luego de clonar el proyecto, abrirlo con vs code y en la consola poner el siguiente comando
+
+npm install
+
+
+// este comando ya no hace falta por que haciendo el npm install nos instala
+    todas las dependencias del package json
+npm i prompt-sync
+
+
+Esta linea que dejo aca abajo es la que tienen que poner al inicio de cada archivo
+para poder usar el prompt
+
+const prompt = require("prompt-sync")({ sigint: true });
