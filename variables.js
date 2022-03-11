@@ -22,8 +22,8 @@ console.log(`el nombre es ${nombre} y la edad es de ${edad} años`)
 // operador de asignacion ( = )
 
 // operadores aritmeticos ( +, -, *, /)
- // ejemplo
- // let multiplicacion = 2 * 2
+// ejemplo
+// let multiplicacion = 2 * 2
 
 
 
