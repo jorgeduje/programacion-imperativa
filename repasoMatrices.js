@@ -10,28 +10,24 @@ let gastos = [
 
 // CALCULAR GASTO TOTAL DE LA TERCER SEMANA
 
-let totalSemanaTres = 0
+let totalSemanaTres = 0;
 for (let i = 0; i < gastos[2].length; i++) {
-
-    totalSemanaTres += gastos[2][i]
-
+  totalSemanaTres += gastos[2][i];
 }
-console.log(totalSemanaTres)
+console.log(totalSemanaTres);
 
 // QUEREMOS SABER EL TOTAL DE LO QUE SE GASTO EN LOS DIAS JUEVES ( JUEVES = POSICION 3)
 // ¿COMO LO HARIAS?
 
-let sumaJueves = 0
-for( let i = 0 ; i < gastos.length ; i++){
-
-    sumaJueves += gastos[i][3]
-
+let sumaJueves = 0;
+for (let i = 0; i < gastos.length; i++) {
+  sumaJueves += gastos[i][3];
 }
-console.log( sumaJueves )
+console.log(sumaJueves);
 
 // CALCULAR EL TOTAL GASTADO DEL MES
 
-let totalMensual = 0
+let totalMensual = 0;
 
 // for(let semana = 0 ; semana < gastos.length ; semana++){
 
@@ -41,17 +37,13 @@ let totalMensual = 0
 //     }
 // }
 
-for(let i = 0 ; i < gastos.length ; i++){
-
-    for(let j = 0 ; j < gastos[i].length ; j++ ){
-
-        totalMensual += gastos[i][j]
-    }
+for (let i = 0; i < gastos.length; i++) {
+  for (let j = 0; j < gastos[i].length; j++) {
+    totalMensual += gastos[i][j];
+  }
 }
 
-console.log( totalMensual )
-
-
+console.log(totalMensual);
 
 // CALCULAR EL GASTO TOTAL DE CADA SEMANA Y MOSTRARLO EN CONSOLA
 // CREAR UN ARRAY CON EL TOTAL DE CADA SEMANA
@@ -92,3 +84,33 @@ console.log(
   `La semana en que mas se gasto es la semana numero ${posicionSemana + 1} 
   que esta en la posicion ${posicionSemana}`
 );
+
+
+let gastos2 = [
+  [1135, 2500, 900, 1600, 2800, 3650, 1100],
+  [1750, 1890, 1900, 1300, 898, 1750, 2800],
+  [800, 1250, 1430, 2100, 1980, 1270, 950],
+  [1700, 4500, 1690, 1900, 22, 1233, 2560],
+];
+
+let mayor = 0
+let posicionFila = 0
+let posicionColumna = 0
+for (let i = 0; i < gastos2.length; i++) {
+   
+    for (let j = 0; j < gastos2[i].length; j++) {
+       
+        if(mayor < gastos2[i][j]){
+            mayor = gastos2[i][j]
+            posicionFila = i
+            posicionColumna = j
+        }
+    }
+    
+}
+console.log( mayor )
+console.log( posicionFila)
+console.log( posicionColumna )
+
+console.log( gastos2[posicionFila][posicionColumna] )
+
