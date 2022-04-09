@@ -53,7 +53,6 @@ for (let fila = 0; fila < matrix.length; fila++) {
     } 
 }
 
-
 let sumaImpares = 0
 for (let fila = 0; fila < matrix.length; fila++) {
 

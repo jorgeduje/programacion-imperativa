@@ -59,6 +59,7 @@ console.log(obtenerAnimal("perro"));
 
 */
 
+
 let puedeSubir = (altura, acompañada)=>{
 
     if(altura >= 1.4 && altura < 2){
