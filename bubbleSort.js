@@ -22,7 +22,7 @@ let ordenar = (arr) => {
         arr[j] = arr[j + 1];
         arr[j + 1] = temporal;
 
-        // SWIPPING de VARIABLES
+        // SWAPPING de VARIABLES
         // [ arr[j], arr[j + 1] ] = [arr[j +1 ], arr[j]  ]
 
       }
